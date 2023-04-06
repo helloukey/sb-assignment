@@ -12,3 +12,7 @@
 - [Link 8](https://melodic-crepe-e5fc60.netlify.app/page8)
 - [Link 9](https://melodic-crepe-e5fc60.netlify.app/page9)
 - [Link 10](https://melodic-crepe-e5fc60.netlify.app/page10)
+
+## PageSpeed Score
+
+- [PageSpeed Score](https://pagespeed.web.dev/analysis/https-melodic-crepe-e5fc60-netlify-app-page1/8oqzpmmdv6?form_factor=desktop)
