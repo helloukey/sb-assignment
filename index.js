@@ -9,7 +9,7 @@ const apiEndpoint = "https://www.boredapi.com/api/activity";
 async function generatePages() {
   try {
     const data = [];
-    const numPages = 1;
+    const numPages = 10;
 
     for (let i = 1; i <= numPages; i++) {
       const url = apiEndpoint;
@@ -17,7 +17,7 @@ async function generatePages() {
       data.push(response.data);
     }
 
-    const pageSize = 1;
+    const pageSize = 10;
     for (let i = 0; i < pageSize; i++) {
       const renderedHtml = await ejs.renderFile("./views/template.ejs", {
         title: `Page ${i + 1}`,
