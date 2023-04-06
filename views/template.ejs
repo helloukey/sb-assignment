@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="public/styles.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% for (let i = 0; i < data.length; i++) { %>
+      <div>
+        <h2><%= data[i].title %></h2>
+        <p><%= data[i].content %></p>
+      </div>
+    <% } %>
+  </body>
+</html>
