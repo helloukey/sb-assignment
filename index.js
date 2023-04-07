@@ -39,12 +39,12 @@ async function generatePages() {
       const fileName = `page${i + 1}.html`;
       const filePath = path.join(distPath, fileName);
       fs.cp("./public", "./dist/", {recursive: true}, () => {
-        console.log("successfully copied");
+        // console.log("successfully copied");
       });
       fs.writeFileSync(filePath, renderedHtml);
     }
 
-    console.log(`Generated pages.`);
+    // console.log(`Generated pages.`);
 
     return Promise.resolve(); // resolve the promise when all pages have been generated
   } catch (error) {
