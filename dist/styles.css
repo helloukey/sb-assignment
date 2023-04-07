@@ -1,0 +1,475 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    padding: 16px 16px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.key {
+    font-weight: 300;
+    /* font-size: 18px;
+    line-height: 30px; */
+    font-size: 9px;
+    line-height: 15px;
+    color: #2B2B35;
+}
+
+.activity_heading {
+    width: 100%;
+    max-width: 640px;
+    font-weight: 800;
+    /* font-size: 72px;
+    line-height: 90px; */
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #2B2B35;
+}
+
+.activity_sub_heading {
+    width: 100%;
+    max-width: 516px;
+    font-weight: 600;
+    /* font-size: 24px;
+    line-height: 100px; */
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #2B2B35;
+}
+
+.price {
+    font-weight: 400;
+    /* font-size: 20px;
+    line-height: 40px; */
+    font-size: 10px;
+    line-height: 20px;
+    color: #2B2B35;
+}
+
+.explore {
+    width: 100%;
+    max-width: 249px;
+    height: 60px;
+    background: #D93A31;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.explore-milestone {
+    /* margin: 0px 96px; */
+    margin: 0px 16px;
+}
+
+.explore-message {
+    font-style: normal;
+    font-weight: 300;
+    /* font-size: 18px;
+    line-height: 30px; */
+    font-size: 9px;
+    line-height: 15px;
+    color: #2B2B35;
+    margin-top: 14px;
+}
+
+.milestone-container {
+    width: 100%;
+    max-width: 468px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 48px;
+}
+
+.milestone-text-one {
+    font-weight: 300;
+    /* font-size: 14px;
+    line-height: 30px; */
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #2B2B35;
+}
+
+.milestone-text-two {
+    font-weight: 800;
+    /* font-size: 80px;
+    line-height: 100px; */
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #2B2B35;
+}
+
+.milestone-text-three {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #2B2B35;
+    padding-bottom: 20px;
+}
+
+.banner-wrapper {
+    background: #2B2B35;
+    padding: 50px 16px;
+    margin-top: auto;
+}
+
+.banner-container {
+    width: 100%;
+    max-width: 586px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-widget {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.banner-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.banner-text-one {
+    font-weight: 400;
+    /* font-size: 14px;
+    line-height: 14px; */
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #B5B5C2;
+}
+
+.banner-text-two {
+    font-weight: 700;
+    /* font-size: 24px; */
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.container-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-two-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.banner-image-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.banner-image-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-image3-container {
+    position: relative;
+}
+
+.banner-image3-child {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-image3-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner-image-one, .banner-image-two, .banner-image-three {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+    .container {
+        padding: 32px 32px 0px 32px;
+    }
+
+    .explore-milestone {
+        margin: 0px 32px;
+    }
+
+    .key {
+        font-size: 12px;
+        line-height: 20px; 
+    }
+
+    .activity_heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .activity_sub_heading {
+        font-size: 15px;
+        line-height: 65px;
+    }
+
+    .price {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .explore-message {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .milestone-text-one {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .milestone-text-two {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .banner-text-one {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .banner-text-two {
+        font-size: 18px;
+    }
+
+    .banner-wrapper {
+        padding: 50px 32px;
+    }
+
+    .banner-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 64px 64px 0px 64px;
+    }
+
+    .explore-milestone {
+        margin: 0px 64px;
+    }
+
+    .key {
+        font-size: 15px;
+        line-height: 25px; 
+    }
+
+    .activity_heading {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .activity_sub_heading {
+        font-size: 18px;
+        line-height: 75px;
+    }
+
+    .price {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .explore-message {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .milestone-text-one {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .milestone-text-two {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .banner-text-one {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .banner-text-two {
+        font-size: 20px;
+    }
+
+    .banner-wrapper {
+        padding: 50px 64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 80px 80px 0px 80px;
+    }
+
+    .explore-milestone {
+        margin: 0px 80px;
+    }
+
+    .key {
+        font-size: 16px;
+        line-height: 28px; 
+    }
+
+    .activity_heading {
+        font-size: 65px;
+        line-height: 80px;
+    }
+
+    .activity_sub_heading {
+        font-size: 22px;
+        line-height: 90px;
+    }
+
+    .price {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .explore-message {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .milestone-text-two {
+        font-size: 75px;
+        line-height: 95px;
+    }
+
+    .banner-text-two {
+        font-size: 22px;
+    }
+
+    .banner-wrapper {
+        padding: 50px 80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding: 96px 96px 0px 96px;
+    }
+
+    .explore-milestone {
+        margin: 0px 96px;
+    }
+
+    .container-two {
+        flex-direction: row;
+    }
+
+    .key {
+        font-size: 18px;
+        line-height: 30px; 
+    }
+
+    .activity_heading {
+        font-size: 72px;
+        line-height: 90px;
+    }
+
+    .activity_sub_heading {
+        font-size: 24px;
+        line-height: 100px;
+    }
+
+    .price {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .explore-message {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .milestone-text-two {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .banner-image-container {
+        flex-direction: row;
+    }
+
+    .banner-image-one, .banner-image-two, .banner-image-three {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .banner-text-two {
+        font-size: 24px;
+    }
+
+    .banner-wrapper {
+        padding: 50px 96px;
+    }
+}

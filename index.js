@@ -38,6 +38,9 @@ async function generatePages() {
 
       const fileName = `page${i + 1}.html`;
       const filePath = path.join(distPath, fileName);
+      fs.cp("./public", "./dist/", {recursive: true}, () => {
+        console.log("successfully copied");
+      });
       fs.writeFileSync(filePath, renderedHtml);
     }
 
