@@ -14,7 +14,9 @@ async function generatePages() {
     for (let i = 1; i <= numPages; i++) {
       const url = apiEndpoint;
       const response = await axios.get(url);
-      data.push(response.data);
+      if (response && response.data) {
+        data.push(response.data);
+      }
     }
 
     const pageSize = 10;
@@ -40,8 +42,10 @@ generatePages();
 const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.static("public")); // Serve files from the root of the project
-app.listen(port, () => {
-  console.log(
-    `Static site generator app listening at http://localhost:${port}`
-  );
-});
+// app.listen(port, () => {
+//   console.log(
+//     `Static site generator app listening at http://localhost:${port}`
+//   );
+// });
+
+module.exports = { generatePages }
