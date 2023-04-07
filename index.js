@@ -30,12 +30,14 @@ async function generatePages() {
 
       const fileName = `page${i + 1}.html`;
       fs.writeFileSync(fileName, renderedHtml);
-      console.log(`Generated page: ${fileName}`);
     }
 
     console.log(`Generated pages.`);
+
+    return Promise.resolve(); // resolve the promise when all pages have been generated
   } catch (error) {
     console.error(error);
+    return Promise.reject(error); // reject the promise if there was an error
   }
 }
 
