@@ -4,8 +4,10 @@ const ejs = require("ejs");
 const express = require("express");
 const app = express();
 
+// api endpoint
 const apiEndpoint = "https://www.boredapi.com/api/activity";
 
+// generatePages function to fetch api and inject data to template.ejs file
 async function generatePages() {
   try {
     const data = [];
@@ -39,13 +41,7 @@ async function generatePages() {
 
 generatePages();
 
-const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.static("public")); // Serve files from the root of the project
-// app.listen(port, () => {
-//   console.log(
-//     `Static site generator app listening at http://localhost:${port}`
-//   );
-// });
 
 module.exports = { generatePages }
