@@ -15,4 +15,4 @@
 
 ## PageSpeed Score
 
-- [PageSpeed Score](https://pagespeed.web.dev/analysis/https-melodic-crepe-e5fc60-netlify-app-page1/8oqzpmmdv6?form_factor=desktop)
+- [PageSpeed Score](https://pagespeed.web.dev/analysis/https-melodic-crepe-e5fc60-netlify-app-page1/b2qox09dpd?form_factor=desktop)
