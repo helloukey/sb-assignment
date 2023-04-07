@@ -46,4 +46,4 @@ generatePages();
 app.set("view engine", "ejs");
 app.use(express.static("public")); // Serve files from the root of the project
 
-module.exports = { generatePages }
+module.exports = { generatePages };
