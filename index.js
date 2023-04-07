@@ -3,6 +3,7 @@ const axios = require("axios");
 const ejs = require("ejs");
 const express = require("express");
 const app = express();
+const path = require("path");
 
 // api endpoint
 const apiEndpoint = "https://www.boredapi.com/api/activity";
@@ -10,6 +11,13 @@ const apiEndpoint = "https://www.boredapi.com/api/activity";
 // generatePages function to fetch api and inject data to template.ejs file
 async function generatePages() {
   try {
+    // create dist path
+    const distPath = path.join(__dirname, "dist");
+    if (!fs.existsSync(distPath)) {
+      fs.mkdirSync(distPath);
+    }
+
+    // data array to store
     const data = [];
     const numPages = 10;
 
@@ -29,7 +37,8 @@ async function generatePages() {
       });
 
       const fileName = `page${i + 1}.html`;
-      fs.writeFileSync(fileName, renderedHtml);
+      const filePath = path.join(distPath, fileName);
+      fs.writeFileSync(filePath, renderedHtml);
     }
 
     console.log(`Generated pages.`);
